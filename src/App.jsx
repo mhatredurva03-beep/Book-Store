@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer.jsx";
 import React from 'react';
 import { Route,Routes } from "react-router-dom";
 
+
 function App(){
   return(
     <>

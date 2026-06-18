@@ -10,16 +10,36 @@ export function Navbar() {
         alignItems: "center",
         position: "sticky",
         top: "0",
+        zIndex: "1000",
       }}
     >
-      <h2 style={{ color: "#F59E0B" }}>📚 BookVerse</h2>
+      <h2
+        style={{
+          color: "#F59E0B",
+          margin: 0,
+        }}
+      >
+        📚 BookVerse
+      </h2>
 
-      <div style={{ display: "flex", gap: "30px" }}>
-        <span>Home</span>
-        <span>Books</span>
-        <span>About</span>
-        <span>Contact</span>
+      <div
+        style={{
+          display: "flex",
+          gap: "40px",
+        }}
+      >
+        <a href="#home" style={linkStyle}>Home</a>
+        <a href="#books" style={linkStyle}>Books</a>
+        <a href="#about" style={linkStyle}>About</a>
+        <a href="#contact" style={linkStyle}>Contact</a>
       </div>
     </nav>
   );
 }
+
+const linkStyle = {
+  color: "white",
+  textDecoration: "none",
+  fontSize: "18px",
+  fontWeight: "500",
+};
